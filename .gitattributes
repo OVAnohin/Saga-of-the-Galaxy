@@ -1,1 +1,24 @@
-*.cs text eol=lf
+# Нормализация окончаний строк
+* text=auto
+
+# Исходный код C# — всегда CRLF в рабочей копии
+*.cs    text eol=crlf
+*.cs.txt text eol=crlf
+
+# Другие текстовые файлы
+*.txt   text eol=crlf
+*.md    text eol=lf
+*.json  text eol=lf
+*.xml   text eol=lf
+*.yml   text eol=lf
+
+# Бинарные файлы — не трогать
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.fbx   binary
+*.asset binary
+*.unity binary
+*.prefab binary
+*.meta  binary
